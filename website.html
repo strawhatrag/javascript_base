@@ -1,9 +1,43 @@
-<style>
-  button {
-    background-color: aqua;
-    color: white;
-  }
-</style>
+<!DOCTYPE html>
+<!--use the latest ver of html-->
 
-<button>hello</button>
-<p>paragraph of <button>click me</button> text</p>
+<html>
+
+<head>
+  <!-- info abt the page -->
+  <title>HTML CSS review</title>
+</head>
+
+<body>
+  <!-- everything you can see -->
+  <style>
+    /* multi line
+      commnet in css*/
+    .cart-btn {
+      background-color: yellow;
+    }
+
+    .buy-btn {
+      background-color: orange;
+    }
+  </style>
+
+  <p>
+    Adults Plain Cotton T-shirt <br /><br />
+    Price: $7.99 <br /><br />
+    <button class="cart-btn" onclick="alert('Added')">Add to cart</button>
+    <button class="buy-btn" onclick="console.log('Loading...')
+        alert('Purchased')">
+      Buy now
+    </button>
+  </p>
+
+  <script>
+    // this is a comment.
+    /* multi line
+    commnet */
+    console.log(2 + 2);
+  </script>
+</body>
+
+</html>
