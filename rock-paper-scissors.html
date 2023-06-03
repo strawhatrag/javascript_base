@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--use the latest ver of html-->
+
+<html>
+
+<head>
+  <!-- info abt the page -->
+  <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+  <!-- everything you can see -->
+  <h3>Rock Paper Scissors</h3>
+  <p>
+    <!-- math.random returns a number lower than 1. (0 - 1) -->
+    <button onclick="console.log(pickMove('rock'))">Rock</button>
+    <button onclick="console.log(pickMove('paper'))">Paper</button>
+    <button onclick="console.log(pickMove('scissors'))">Scissors</button>
+  </p>
+  <script>
+
+    function pickMove(player_choice) {
+
+      const randomNum = Math.random();
+      //ternary op
+      //condition ? true_expression : false_expression
+      // let num = 10 < 5 ? 'true' : 'false' ;
+      let com_choice = randomNum < 0.34 ? 'rock' : (randomNum > 0.33 && randomNum < 0.67 ? 'paper' : 'scissors');
+
+      let result = player_choice == com_choice ? "It's a Tie" : (player_choice + com_choice == 'rockscissors' || player_choice + com_choice == 'scissorspaper' || player_choice + com_choice == 'paperrock') ? 'Player wins' : 'Computer wins';
+
+      return result;
+    }
+
+
+
+  </script>
+</body>
+
+</html>
