@@ -12,7 +12,21 @@
   <!-- everything you can see -->
 
   <script>
-    const product = {};
+    const product = {
+      name: 'rag',
+      age: 24,
+      'interests': ['devops', 'opensource'],
+      method() {
+        console.log("shorthand method in objs")
+      }
+    };
+
+    //another way to 
+    console.log(product['interests'])
+    console.log(JSON.stringify(product))
+
+
+
   </script>
 </body>
 
