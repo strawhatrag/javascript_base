@@ -4,24 +4,48 @@
 <html>
 
 <head>
-  <!-- info abt the page -->
-  <title>DOM</title>
+  <title>DOM project</title>
 </head>
 
 <body>
-  <!-- everything you can see -->
-  <button>hello</button>
-  <button class="js-btn">second</button>
+  <p>Youtube subscript Button</p>
+  <button onclick=" subscribe();" class="js-subscribe-button">
+    Subscribe
+  </button>
+
+  <p>Amazon Shipping Calculator</p>
+  <input class="js-cost-input" placeholder="cost of item"> <button>Calculate</button>
+  <p class="js-total-cost"></p>
 
   <script>
-    document.querySelector('button').innerHTML = 'changed';
+    function subscribe() {
+      const btmElement = document.querySelector('.js-subscribe-button');
+      if (btmElement.innerHTML === 'Subscribe') {
+        btmElement.innerHTML = 'Subscribed'
+      } else {
+        btmElement.innerHTML = 'Subscribe';
+      }
+    }
 
-    // use .string will look for class (. + class name)
-    document.querySelector('.js-btn').innerHTML = 'changed';
 
-    const buttonElement = document.querySelector('.js-btn');
+    function Calculate() {
+      const input = document.querySelector('.js-cost-input');
 
-    console.log(buttonElement)
+      let cost = Number(input.value);
+
+
+
+      if (cost < 40) {
+        cost += 10;
+      }
+
+
+      document.querySelector
+    }
+
+
+
+
 
   </script>
 </body>
