@@ -6,16 +6,22 @@
 <head>
   <!-- info abt the page -->
   <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="10-rock-paper-scissors.css">
 </head>
 
 <body>
+
   <!-- everything you can see -->
   <h3>Rock Paper Scissors</h3>
   <p>
     <!-- math.random returns a number lower than 1. (0 - 1) -->
-    <button onclick="playRound('rock')">Rock</button>
-    <button onclick="playRound('paper')">Paper</button>
-    <button onclick="playRound('scissors')">Scissors</button>
+    <button onclick="playRound('rock')" class="move-button"> <img src="rock-emoji.png" class="move-icon">
+    </button>
+    <button onclick="playRound('paper')" class="move-button"> <img src="paper-emoji.png" class="move-icon"></button>
+    <button onclick="playRound('scissors')" class="move-button"><img src="scissors-emoji.png"
+        class="move-icon"></button>
+    <br />
+    <br />
     <button onclick="resetScore()">Reset Score</button>
   </p>
   <script>
